@@ -1,6 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button, Statistic } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
+
+const StatisticExampleStatistic = () => (
+  <Statistic inverted color="yellow">
+    <Statistic.Value>5,550</Statistic.Value>
+    <Statistic.Label>Downloads</Statistic.Label>
+  </Statistic>
+)
+
+// export default StatisticExampleStatistic
 
 function App() {
   return (
@@ -18,6 +29,9 @@ function App() {
         >
           Learn React
         </a>
+        <p></p>
+        <Button primary inverted>Semantic Button</Button>
+        <StatisticExampleStatistic />
       </header>
     </div>
   );
